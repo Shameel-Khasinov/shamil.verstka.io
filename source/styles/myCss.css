@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    background: radial-gradient(#060a79 0%, #030303 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: aquamarine;
+}
+
+.bg-body-tertiary {
+    background-color: black !important;
+}
+
+
+.nav-link {
+    color: rgb(139, 146, 144);
+    
+}
+
+.navbar-nav .nav-link.active {
+    color: aquamarine;
+    box-shadow: 1px 2px rgba(38, 3, 177, 0.712)
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(212, 202, 207);
+    margin: auto auto;
+    /* margin-inline: auto;
+    margin-block: auto; */
+}
+
+.nav-link:hover {
+    color:brown;
+    font-size: 1.1em;
+}
+
+.navbar-toggler {
+    background-color: rgb(149, 139, 152);
+    color: rgb(144, 16, 39) !important
+}
+
+.col {
+    border-style: solid;
+}
+
+
+.saidbar {
+    color: aquamarine;
+    background: radial-gradient(#545680 0%, #030303 100%); 
+}
+
+.card {
+    background: linear-gradient(0deg, #96509b 12%, #ffffff 100%);
+}
+
+.card a{
+    background: linear-gradient(0deg, #96509b 12%, #ffffff 100%);
+    text-decoration: none;
+}
+
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-item {
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 14px 12px 48px 39px #000000;
+    animation: myAnim1 0.1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim1 {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+footer {
+    background: radial-gradient(#545680 0%, #030303 100%); ; 
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.call-anim {
+    animation: myAnim2 1s linear 1s 100 reverse both;
+}
+
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+.btn {
+color: #96509b;
+}

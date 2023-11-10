@@ -1,0 +1,40 @@
+.bgvideo {
+    height: 70vh;  /*vh - единица измерения от окна браузера (в %-ах)*/
+    width: 100%;
+    position: relative;
+    display: flex; /*для применения слоев (ниже)*/
+    justify-content: center;
+    align-items: center;
+  }
+
+.bgvideo video {
+  height: 70vh;  /*vh - единица измерения от окна браузера (в %-ах)*/
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; /*если изображение переполнит контейнер, то поля, которые не вместились, будут просто обрезаны*/
+  z-index: 1; /*нижний слой*/
+}
+
+.video-text {
+    color: aquamarine;
+    z-index: 2; /*верхний слой*/
+}
+
+/*тут слева и сверху 0 пкс, видео растягивается на 100% и срезаются верха, не уместившиеся в 70vh*/
+
+/*Пока что кажется, что благодаря тому, что родительский bgvideo имеет св-во position:relative , то его дочерний будет отсчитывать свое абсолютное позиционирование не от границ страницы, а от границ
+своего родительского контейнера*/
+
+
+.effect {
+    height: 70vh;  
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.758);
+}
